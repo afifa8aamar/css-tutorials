@@ -1,14 +1,14 @@
 $color-1:#21C2F8;
-$color-2 : #FFF;
+$color-2:#FFFFFF;
 $color-3:#222533;
-$color-4: #F39705;
-$color-5:#E25611 ;
-$color-6:#9A2C4A ;
-$color-7:#97C200 ;
-$color-8: #3D4C53;
-$color-9: #62A783;
-$color-10:#F82F54 ;
-$color-11:#8FC567 ;
+$color-4:#F39705;
+$color-5:#E25611;
+$color-6:#9A2C4A;
+$color-7:#97C200;
+$color-8:#3D4C53;
+$color-9:#62A783;
+$color-10:#F82F54;
+$color-11:#8FC567;
 
 * {
     box-sizing: border-box;
@@ -21,26 +21,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.row {
-    display: flex;
-    align-items: flex-end;
-    .btn {
-        margin-right: 30px;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
-
 .btn {
-    background-color: $color-1;
     padding: 11px 37px;
+    background-color: $color-1;
+    color: $color-2;
+    font-family: 'Lato';
+    font-size: 14px;
     text-decoration: none;
-    color : $color-2;
-    text-transform : uppercase; 
-    font-family : 'Lato';
     font-weight: 900;
-    font-size :14px;
+    text-transform: uppercase;
+    
     border : none;
     &:hover {
         cursor: pointer;
@@ -70,6 +60,18 @@ body {
         }
         &-20 {
             border-radius: 20px;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    align-items: flex-end;
+
+    .btn {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
