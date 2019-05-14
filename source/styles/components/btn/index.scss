@@ -57,7 +57,7 @@
     @each $ind, $color in $palette {
 
         &-#{$ind} {
-            background-color: $color($ind);
+            background-color: $color;
         }
     }
 }
